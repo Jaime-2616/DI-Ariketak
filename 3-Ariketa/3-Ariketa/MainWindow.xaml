@@ -1,0 +1,27 @@
+﻿<Window x:Class="_3_Ariketa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ejercicio Números" Height="300" Width="500">
+    <Grid>
+        <StackPanel x:Name="panelEntrada" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label x:Name="lblNumero" Content="Numero 1" FontSize="18" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtNumero" Width="200" Height="35" Margin="0,0,0,15"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button x:Name="btnSiguiente" Content="Siguiente" Width="100" Margin="5"
+                        Click="btnSiguiente_Click"/>
+                <Button x:Name="btnSalir1" Content="Salir" Width="100" Margin="5"
+                        Click="btnSalir_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="panelResultado" Visibility="Collapsed" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Resultado:" FontSize="18" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtResultado" Width="200" Height="35" IsReadOnly="True" Margin="0,0,0,15"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button x:Name="btnLimpiar" Content="Limpiar" Width="100" Margin="5"
+                        Click="btnLimpiar_Click"/>
+                <Button x:Name="btnSalir2" Content="Salir" Width="100" Margin="5"
+                        Click="btnSalir_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

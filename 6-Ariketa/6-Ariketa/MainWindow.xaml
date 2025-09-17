@@ -1,0 +1,20 @@
+﻿<Window x:Class="IntroTekla.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pulsar la tecla intro" Height="300" Width="400">
+    <Grid Margin="10">
+        <TextBlock Text="Escribe un texto" FontSize="18" FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="0,10,0,0"/>
+
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
+            <TextBox x:Name="txt1" KeyDown="TextBox_KeyDown"/>
+            <TextBox x:Name="txt2" KeyDown="TextBox_KeyDown"/>
+            <TextBox x:Name="txt3" KeyDown="TextBox_KeyDown"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" >
+            <Button Content="Limpiar" Width="80" Click="BtnLimpiar_Click"/>
+            <Button Content="Salir" Width="80" Click="BtnSalir_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

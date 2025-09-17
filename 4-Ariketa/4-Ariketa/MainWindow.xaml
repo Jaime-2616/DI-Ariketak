@@ -1,0 +1,18 @@
+﻿<Window x:Class="_4_Ariketa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Identificación del usuario" Height="250" Width="400">
+    <Grid Margin="10">
+        <Label Content="Usuario:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,30,0,0"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Width="120" Height="25" Margin="120,30,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Contraseña:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,70,0,0"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Width="120" Height="25" Margin="120,70,0,0" VerticalAlignment="Top"/>
+
+        <Button Content="Aceptar" Width="70" Height="25" HorizontalAlignment="Left" Margin="40,120,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Limpiar" Width="70" Height="25" HorizontalAlignment="Left" Margin="130,120,0,0" VerticalAlignment="Top" Click="Button_Limpiar"/>
+        <Button Content="Salir" Width="70" Height="25" HorizontalAlignment="Left" Margin="220,120,0,0" VerticalAlignment="Top" Click="Button_Salir"/>
+
+        <Label x:Name="lblMensaje" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,170,0,0" Foreground="Black"/>
+    </Grid>
+</Window>
