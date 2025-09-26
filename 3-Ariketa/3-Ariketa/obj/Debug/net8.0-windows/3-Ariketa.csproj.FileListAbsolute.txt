@@ -17,3 +17,4 @@ D:\Jaime\DI\Ariketak\3-Ariketa\3-Ariketa\obj\Debug\net8.0-windows\refint\3-Arike
 D:\Jaime\DI\Ariketak\3-Ariketa\3-Ariketa\obj\Debug\net8.0-windows\3-Ariketa.pdb
 D:\Jaime\DI\Ariketak\3-Ariketa\3-Ariketa\obj\Debug\net8.0-windows\3-Ariketa.genruntimeconfig.cache
 D:\Jaime\DI\Ariketak\3-Ariketa\3-Ariketa\obj\Debug\net8.0-windows\ref\3-Ariketa.dll
+D:\Jaime\DI\Ariketak\3-Ariketa\3-Ariketa\obj\Debug\net8.0-windows\3-Ariketa.sourcelink.json
