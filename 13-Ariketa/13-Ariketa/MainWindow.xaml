@@ -1,0 +1,47 @@
+﻿<Window x:Class="_12_Ariketa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_12_Ariketa"
+        mc:Ignorable="d"
+        Title="Editor de Texto" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Artxibatzeea">
+                <MenuItem Header="Gorde" Click="MenuItem_Gorde_Click"/>
+                <Separator/>
+                <MenuItem Header="Irten" Click="MenuItem_Irten_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Editatzeea">
+                <MenuItem Header="Moztu" Click="MenuItem_Moztu_Click" InputGestureText="Ctrl+X"/>
+                <MenuItem Header="Kopiatu" Click="MenuItem_Kopiatu_Click" InputGestureText="Ctrl+C"/>
+                <MenuItem Header="Itsasi" Click="MenuItem_Itsasi_Click" InputGestureText="Ctrl+V"/>
+                <Separator/>
+                <MenuItem Header="Ezabatu" Click="MenuItem_Ezabatu_Click" InputGestureText="Supr"/>
+            </MenuItem>
+
+            <MenuItem Header="Iturria">
+                <MenuItem Header="Arial" Click="MenuItem_Arial_Click"/>
+                <MenuItem Header="Courier" Click="MenuItem_Courier_Click"/>
+                <MenuItem Header="Impact" Click="MenuItem_Impact_Click"/>
+                <MenuItem Header="Symbol" Click="MenuItem_Symbol_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBox x:Name="txtEditor" 
+                 Grid.Row="1" 
+                 Margin="10" 
+                 AcceptsReturn="True" 
+                 AcceptsTab="True"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"/>
+    </Grid>
+</Window>

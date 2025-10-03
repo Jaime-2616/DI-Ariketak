@@ -1,0 +1,15 @@
+﻿<Window x:Class="_11_Ariketa.Ventana2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Formulario 2" Height="250" Width="350">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock x:Name="lblNombre" FontSize="16" Margin="0,5"/>
+            <TextBlock x:Name="lblApellido1" FontSize="16" Margin="0,5"/>
+            <TextBlock x:Name="lblApellido2" FontSize="16" Margin="0,5"/>
+            <TextBlock x:Name="lblDni" FontSize="16" Margin="0,5"/>
+
+            <Button Content="Salir" Click="BtnSalir_Click" Margin="0,15" HorizontalAlignment="Center" Width="80"/>
+        </StackPanel>
+    </Grid>
+</Window>
